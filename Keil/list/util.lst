@@ -1,0 +1,12 @@
+L 1 "..\Src\util.c"
+N#include "util.h"
+L 1 "../Inc/util.h" 1
+N#ifndef UTIL_H
+N#define UTIL_H
+N
+N#define IS_BIT_SET(REG, BIT)         (((REG) & (BIT)) != RESET)
+N#define IS_BIT_CLR(REG, BIT)         (((REG) & (BIT)) == RESET)
+N
+N#endif
+N
+L 2 "..\Src\util.c" 2

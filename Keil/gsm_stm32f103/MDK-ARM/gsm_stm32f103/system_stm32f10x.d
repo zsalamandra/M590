@@ -1,0 +1,9 @@
+gsm_stm32f103\system_stm32f10x.o: ..\Src\system_stm32f10x.c
+gsm_stm32f103\system_stm32f10x.o: ../Inc/stm32f10x.h
+gsm_stm32f103\system_stm32f10x.o: E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE\RTE_Components.h
+gsm_stm32f103\system_stm32f10x.o: ../Drivers/CMSIS/Include/core_cm3.h
+gsm_stm32f103\system_stm32f10x.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+gsm_stm32f103\system_stm32f10x.o: ../Drivers/CMSIS/Include/core_cmInstr.h
+gsm_stm32f103\system_stm32f10x.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+gsm_stm32f103\system_stm32f10x.o: ../Drivers/CMSIS/Include/core_cmFunc.h
+gsm_stm32f103\system_stm32f10x.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h

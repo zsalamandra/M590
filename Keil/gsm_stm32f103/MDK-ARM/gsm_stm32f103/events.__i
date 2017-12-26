@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99
+-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE
+-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB
+-o gsm_stm32f103\events.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\events.crf --depend gsm_stm32f103\events.d "..\Src\Events.c"
