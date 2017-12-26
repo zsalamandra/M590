@@ -22,7 +22,12 @@ void SysTick_Handler(void)
 }
 
 
+/**
+  * @brief  Периодические прерывания
+  * @param  None 
+  * @retval None
 
+  */
 void TIM2_IRQHandler(void)
 {
 	static uint8_t sec;
