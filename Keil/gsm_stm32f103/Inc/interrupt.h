@@ -2,7 +2,7 @@
 #define INTERRUPT_H
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f1xx_hal.h"
+#include "includes.h"
 #include "main.h"
 #include "event_functions.h"
 /* Exported types ------------------------------------------------------------*/

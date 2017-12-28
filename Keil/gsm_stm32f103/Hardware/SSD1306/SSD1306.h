@@ -23,8 +23,12 @@
 #define _SSD1306_H_
 
 /* Includes ------------------------------------------------------------------*/
+#include "SSD1306.h"
 #include "MacroAndConst.h"
 #include "Fonts.h"
+#include "gpio.h"
+#include "includes.h"
+#include "delay.h"
 
 #define SH1106
 //#define SSD1306
@@ -40,8 +44,8 @@
 #define SSD1306_CS_PIN          GPIO_PIN_7
 #define SSD1306_CLK_PIN         GPIO_PIN_3
 #define SSD1306_DIN_PIN         GPIO_PIN_5
-#define SSD1306_RES_PIN         PIN_RES_Pin
-#define SSD1306_DC_PIN          PIN_DC_Pin
+#define SSD1306_RES_PIN         GPIO_PIN_6
+#define SSD1306_DC_PIN          GPIO_PIN_4
 
 #define SSD1306_CS_GPIO         GPIOB
 #define SSD1306_CLK_GPIO        GPIOB
@@ -49,63 +53,25 @@
 #define SSD1306_RES_GPIO        GPIOB
 #define SSD1306_DC_GPIO         GPIOB 
 
-#define __SSD1306_CS_SET()      HAL_GPIO_WritePin(SSD1306_CS_GPIO, SSD1306_CS_PIN, GPIO_PIN_SET)
-#define __SSD1306_CS_CLR()      HAL_GPIO_WritePin(SSD1306_CS_GPIO, SSD1306_CS_PIN, GPIO_PIN_RESET)
+#define __SSD1306_CS_SET()      GPIO_WritePin(SSD1306_CS_GPIO, SSD1306_CS_PIN, PINSET)
+#define __SSD1306_CS_CLR()      GPIO_WritePin(SSD1306_CS_GPIO, SSD1306_CS_PIN, PINRES)
 
-#define __SSD1306_RES_SET()     HAL_GPIO_WritePin(SSD1306_RES_GPIO, SSD1306_RES_PIN, GPIO_PIN_SET)
-#define __SSD1306_RES_CLR()     HAL_GPIO_WritePin(SSD1306_RES_GPIO, SSD1306_RES_PIN, GPIO_PIN_RESET)
+#define __SSD1306_RES_SET()     GPIO_WritePin(SSD1306_RES_GPIO, SSD1306_RES_PIN, PINSET)
+#define __SSD1306_RES_CLR()     GPIO_WritePin(SSD1306_RES_GPIO, SSD1306_RES_PIN, PINRES)
 
-#define __SSD1306_DC_SET()      HAL_GPIO_WritePin(SSD1306_DC_GPIO, SSD1306_DC_PIN, GPIO_PIN_SET)
-#define __SSD1306_DC_CLR()      HAL_GPIO_WritePin(SSD1306_DC_GPIO, SSD1306_DC_PIN, GPIO_PIN_RESET)
+#define __SSD1306_DC_SET()      GPIO_WritePin(SSD1306_DC_GPIO, SSD1306_DC_PIN, PINSET)
+#define __SSD1306_DC_CLR()      GPIO_WritePin(SSD1306_DC_GPIO, SSD1306_DC_PIN, PINRES)
 
-#define __SSD1306_CLK_SET()     HAL_GPIO_WritePin(SSD1306_CLK_GPIO, SSD1306_CLK_PIN, GPIO_PIN_SET)
-#define __SSD1306_CLK_CLR()     HAL_GPIO_WritePin(SSD1306_CLK_GPIO, SSD1306_CLK_PIN, GPIO_PIN_RESET)
+#define __SSD1306_CLK_SET()     GPIO_WritePin(SSD1306_CLK_GPIO, SSD1306_CLK_PIN, PINSET)
+#define __SSD1306_CLK_CLR()     GPIO_WritePin(SSD1306_CLK_GPIO, SSD1306_CLK_PIN, PINRES)
 
-#define __SSD1306_DIN_SET()     HAL_GPIO_WritePin(SSD1306_DIN_GPIO, SSD1306_DIN_PIN, GPIO_PIN_SET)
-#define __SSD1306_DIN_CLR()     HAL_GPIO_WritePin(SSD1306_DIN_GPIO, SSD1306_DIN_PIN, GPIO_PIN_RESET)
+#define __SSD1306_DIN_SET()     GPIO_WritePin(SSD1306_DIN_GPIO, SSD1306_DIN_PIN, PINSET)
+#define __SSD1306_DIN_CLR()     GPIO_WritePin(SSD1306_DIN_GPIO, SSD1306_DIN_PIN, PINRES)
 
 #define __SSD1306_WRITE_BYTE(DATA) spi_write_byte(DATA)
 /*------------------------------------------------------------------------------------------------------*/
 
 
-
-#define IIC_SCL_PIN         GPIO_Pin_13
-#define IIC_SDA_PIN         GPIO_Pin_15
-
-#define IIC_SCL_GPIO        GPIOB
-#define IIC_SDA_GPIO        GPIOB
-
-#define __IIC_SCL_SET()     GPIO_WriteBit(IIC_SCL_GPIO, IIC_SCL_PIN, Bit_SET)
-#define __IIC_SCL_CLR()     GPIO_WriteBit(IIC_SCL_GPIO, IIC_SCL_PIN, Bit_RESET)
-
-#define __IIC_SDA_SET()		GPIO_WriteBit(IIC_SDA_GPIO, IIC_SDA_PIN, Bit_SET)
-#define __IIC_SDA_CLR()     GPIO_WriteBit(IIC_SDA_GPIO, IIC_SDA_PIN, Bit_RESET)
-
-#define __IIC_SDA_IN()     	do { \
-								GPIO_InitTypeDef tGPIO; \
-								tGPIO.GPIO_Pin = IIC_SDA_PIN; \
-								tGPIO.GPIO_Speed = GPIO_Speed_50MHz; \
-								tGPIO.GPIO_Mode = GPIO_Mode_IPU; \
-								GPIO_Init(IIC_SDA_GPIO, &tGPIO); \
-							}while(0)				
-
-#define __IIC_SDA_OUT() 	do { \
-								GPIO_InitTypeDef tGPIO; \
-								tGPIO.GPIO_Pin = IIC_SDA_PIN; \
-								tGPIO.GPIO_Speed = GPIO_Speed_50MHz; \
-								tGPIO.GPIO_Mode = GPIO_Mode_Out_PP; \
-								GPIO_Init(IIC_SDA_GPIO, &tGPIO); \
-							}while(0)   
-
-
-#define __IIC_SDA_READ()    GPIO_ReadInputDataBit(IIC_SDA_GPIO, IIC_SDA_PIN)
-
-/* Exported types ------------------------------------------------------------*/
-/* Exported constants --------------------------------------------------------*/
-
-/* Exported macro ------------------------------------------------------------*/
-
-/* Exported functions ------------------------------------------------------- */
 
 extern void ssd1306_clear_screen(uint8_t chFill);
 extern void ssd1306_refresh_gram(void);

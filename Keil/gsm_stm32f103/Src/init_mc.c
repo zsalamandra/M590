@@ -7,10 +7,8 @@
 /*************************  TIMER INITIALIZATION	***************************/
 
 static void initTim4CaptureMode(void){
-  //Init_DMA();
-  //включаем тактирование порта А, альтернативных функций и таймера
-  RCC->APB2ENR |= RCC_APB2ENR_IOPAEN | RCC_APB2ENR_AFIOEN;
-  RCC->APB1ENR |= RCC_APB1ENR_TIM4EN; 
+  
+	RCC->APB1ENR |= RCC_APB1ENR_TIM4EN; 
 	
     TIM4->PSC = 72000-1;//частота 1Khz
 
@@ -29,6 +27,22 @@ static void initTim4CaptureMode(void){
 }
 
 
+static void initTim2BaseMode(void){
+	
+	RCC->APB1ENR |= RCC_APB1ENR_TIM2EN; 
+	
+    TIM2->PSC = 36000-1;//частота 1Khz
+	TIM2->ARR = 2000-1;
+
+    //TIM4->CCER |= TIM_CCER_CC4P;//выбираем захват по заднему фронту
+    //TIM4->CCER |= TIM_CCER_CC4E;//включаем режим захвата для 4-го канала         
+
+    //TIM4->DIER |= TIM_DIER_CC4DE;//разрешаем формировать запрос к DMA
+    TIM2->DIER |= TIM_DIER_UIE; //разрешаем прерывание по захвату
+
+    TIM2->CR1 |= TIM_CR1_CEN; //включаем счётчик
+}
+
 
 /*********************** NVIC INIT  *******************************************/
 static void initNVIC(void){
@@ -43,38 +57,7 @@ static void initNVIC(void){
 
 
 
-/***********************    GPIO INIT   ***************************************/
-static void init_gpio(void){
-    
-    RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
-    __NOP();
-    RCC->APB2ENR |= RCC_APB2ENR_IOPBEN;
-    __NOP();
-    RCC->APB2ENR |= RCC_APB2ENR_IOPCEN;
-    __NOP();
-    RCC->APB2ENR |= RCC_APB2ENR_IOPDEN;
-    __NOP();
-    
-    // PORTB.3 настроен на выход 10MHz
-    GPIOB->CRL &= ~GPIO_CRL_CNF3;
-    GPIOB->CRL |= GPIO_CRL_MODE3_0;
-    
-    // PORTB.4 настроен на выход 10MHz
-    GPIOB->CRL &= ~GPIO_CRL_CNF4;
-    GPIOB->CRL |= GPIO_CRL_MODE4_0;
-    
-    // PORTB.5 настроен на выход 10MHz
-    GPIOB->CRL &= ~GPIO_CRL_CNF5;
-    GPIOB->CRL |= GPIO_CRL_MODE5_0;
-		
-    // PORTB.6 настроен на выход 10MHz
-    GPIOB->CRL &= ~GPIO_CRL_CNF6;
-    GPIOB->CRL |= GPIO_CRL_MODE6_0;
-    
-    // PORTB.7 настроен на выход 10MHz
-    GPIOB->CRL &= ~GPIO_CRL_CNF7;
-    GPIOB->CRL |= GPIO_CRL_MODE7_0;    
-}
+
 
 static void SetSysClock(void){
 	
@@ -90,7 +73,7 @@ static void SetSysClock(void){
 	{
 		HSEStatus = RCC->CR & RCC_CR_HSERDY;
 		StartUpCounter++;  
-	} while((HSEStatus == 0) && (StartUpCounter != HSE_STARTUP_TIMEOUT));
+	} while((HSEStatus == 0) && (StartUpCounter != (uint32_t)100));
 
 	if (RCC->CR & RCC_CR_HSERDY)
 	{
@@ -163,14 +146,15 @@ static void SetSysClock(void){
 
 void init_mc(void){
     
-	//SetSysClock();
+	SetSysClock();
     // включение тактирования альтернативных функций
 	RCC->APB2ENR |= RCC_APB2ENR_AFIOEN;
     // отключение режима отладки JTUG
 	AFIO->MAPR |= AFIO_MAPR_SWJ_CFG_JTAGDISABLE;      
     
     initTim4CaptureMode();
+	initTim2BaseMode();
     initNVIC();
-    //init_gpio();
+    init_gpio();
     
 }

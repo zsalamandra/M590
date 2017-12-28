@@ -1,2 +1,11 @@
 gsm_stm32f103\util.o: ..\Src\util.c
 gsm_stm32f103\util.o: ../Inc/util.h
+gsm_stm32f103\util.o: ../Inc/includes.h
+gsm_stm32f103\util.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+gsm_stm32f103\util.o: ../Inc/util.h
+gsm_stm32f103\util.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
+gsm_stm32f103\util.o: ../Drivers/CMSIS/Include/core_cm3.h
+gsm_stm32f103\util.o: ../Drivers/CMSIS/Include/core_cmInstr.h
+gsm_stm32f103\util.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+gsm_stm32f103\util.o: ../Drivers/CMSIS/Include/core_cmFunc.h
+gsm_stm32f103\util.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h

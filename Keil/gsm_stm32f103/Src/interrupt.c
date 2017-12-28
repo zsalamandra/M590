@@ -1,5 +1,5 @@
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f1xx_hal.h"
+#include "includes.h"
 #include "stm32f1xx.h"
 #include "interrupt.h"
 #include "gsm_common.h"
@@ -8,18 +8,6 @@
 
 __weak void Event_SecCallback(void);
 
-
-/* External variables --------------------------------------------------------*/
-extern TIM_HandleTypeDef htim2;
-
-
-/**
-* @brief This function handles System tick timer.
-*/
-void SysTick_Handler(void)
-{
-  HAL_IncTick();
-}
 
 
 /**
@@ -31,12 +19,16 @@ void SysTick_Handler(void)
 void TIM2_IRQHandler(void)
 {
 	static uint8_t sec;
-	sec++;
 	
-	if (sec%60 == 0){
-		sec = 0;
-		// положить функцию печати уровня сигнала в буфер диспетчера
-		ES_PlaceEvent( (pxEventFuncType)EF_PrintSignalLevel );
+	if (IS_BIT_SET(TIM2->SR, TIM_SR_UIF)){
+		CLEAR_BIT(TIM2->SR, TIM_SR_UIF);
+		sec++;
+	
+		if (sec%60 == 0){
+			sec = 0;
+			// положить функцию печати уровня сигнала в буфер диспетчера
+			ES_PlaceEvent( (pxEventFuncType)EF_PrintSignalLevel );
+		}
 	}
 }
 
@@ -54,9 +46,9 @@ void TIM4_IRQHandler(void)
   static volatile uint16_t Value_Prev = 0; 
   static volatile uint16_t Value = 0; 
   // Если сработало прерывание 4 канала  
-  if IS_BIT_SET(TIM4->SR, TIM_IT_CC4){
+  if IS_BIT_SET(TIM4->SR, TIM_DIER_CC4IE){
       // очистка бита "сработало прерывание 4го канала"
-      CLEAR_BIT(TIM4->SR, TIM_IT_CC4);
+      CLEAR_BIT(TIM4->SR, TIM_DIER_CC4IE);
       
       Value_Prev = Value;
       Value = TIM4->CCR4;

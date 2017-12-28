@@ -16,6 +16,8 @@ email: zaur121079@yandex.ru
 #include "delay.h"
 #include "gsm_usart.h"
 #include "gsm_common.h"
+#include "util.h"
+#include "includes.h"
 
 
 
@@ -46,24 +48,13 @@ uint8_t GSM_AT(void){
 *******************************************************************/
 uint8_t GSM_Boot(void){
 									
-	GPIO_InitTypeDef GPIO_InitStruct;
-	
 	if (GSM_AT()){
 		return 0x01;
 	}
 
-	/*Configure GPIO pin Output Level */
-	HAL_GPIO_WritePin(PIN_GSM_ON_GPIO_Port, PIN_GSM_ON_Pin, GPIO_PIN_RESET);
-	
-	/*Configure GPIO pin : PtPin */
-	GPIO_InitStruct.Pin 	= PIN_GSM_ON_Pin;
-	GPIO_InitStruct.Mode 	= GPIO_MODE_OUTPUT_PP;
-	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-	HAL_GPIO_Init(PIN_GSM_ON_GPIO_Port, &GPIO_InitStruct);
-	
-	HAL_GPIO_WritePin(PIN_GSM_ON_GPIO_Port, PIN_GSM_ON_Pin, GPIO_PIN_SET);
+	//GPIO_WritePin(PIN_GSM_ON_GPIO_Port, PIN_GSM_ON_Pin, SET);
 	delay_ms(500);
-	HAL_GPIO_WritePin(PIN_GSM_ON_GPIO_Port, PIN_GSM_ON_Pin, GPIO_PIN_RESET);
+	//GPIO_WritePin(PIN_GSM_ON_GPIO_Port, PIN_GSM_ON_Pin, RESET);
 	
 	delay_ms(1000);
 	return GSM_AT();
@@ -75,10 +66,6 @@ uint8_t GSM_Boot(void){
     Параметры:
 *******************************************************************/
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
-	if (GPIO_Pin == GPIO_PIN_13){
-		
-		
-	}
 	
 }
 	

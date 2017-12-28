@@ -19,7 +19,6 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
-#include "LIB_Config.h"
 #include "SSD1306.h"
 #include "Fonts.h"
 
@@ -67,34 +66,7 @@ void spi_write_byte(uint8_t data){
 }								
 	
 
-/*
-void ssd1306_hw_init(){
-	//BR[2:0] Baud rate control 000: fPCLK/2
-	
-	
-	__HAL_RCC_SPI1_CLK_ENABLE();
-	
-	SPI1->CR1 = 0;
-	SPI1->CR1 |= SPI_CR1_BIDIMODE;	//Bidirectional data mode enable
-	SPI1->CR1 |= SPI_CR1_SSM;			//Software slave management
-	SPI1->CR1 |= SPI_CR1_SSI;			//Internal slave select
-	SPI1->CR1	|= SPI_CR1_MSTR;		//Master selection 0: Slave configuration 1: Master configuration
-	
-	 
-	
-	GPIO_InitTypeDef GPIO_InitStruct;
-	
-	//STM32F103
-	//GPIO_PIN_3 - PORTB3
-	//GPIO_PIN_5 - PORTB5
-	GPIO_InitStruct.Pin 	= GPIO_PIN_3|GPIO_PIN_5;
-	GPIO_InitStruct.Mode 	= GPIO_MODE_AF_PP;
-	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-	HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-	__HAL_AFIO_REMAP_SPI1_ENABLE();	
-}	
-*/								
+					
 
 /**
   * @brief  Writes an byte to the display data ram or the command register
@@ -246,7 +218,7 @@ void ssd1306_draw_point(uint8_t chXpos, uint8_t chYpos, uint8_t chPoint)
 
 void ssd1306_clear_region(uint8_t chXpos, uint8_t chYpos, uint8_t chWidth, uint8_t chHeight)
 {
-	uint8_t chPos, chBx, chTemp = 0;
+	uint8_t chPos;
 	
 	if (chXpos > 127 || chYpos > 63) {
 		return;
@@ -255,8 +227,8 @@ void ssd1306_clear_region(uint8_t chXpos, uint8_t chYpos, uint8_t chWidth, uint8
 	for (int i=0; i<chWidth; i++){
 		for (int j=0; j<chHeight; j++){
 			chPos = 7 - (chYpos+j) / 8; // 
-			chBx = (chYpos+j) % 8;
-			chTemp = 1 << (7 - chBx);
+			
+			
 			
 			
 			s_chDispalyBuffer[chXpos+i][chPos] = 0;
@@ -483,49 +455,10 @@ void ssd1306_draw_bitmap(uint8_t chXpos, uint8_t chYpos, const uint8_t *pchBmp, 
 **/
 void ssd1306_init(void)
 {
-
-#ifdef INTERFACE_4WIRE_SPI	  
 	__SSD1306_CS_SET();   //CS set
 	__SSD1306_DC_CLR();   //D/C reset
 	__SSD1306_RES_SET();  //RES set
 	
-	#ifdef HARDWARE_PROTOCOL
-		ssd1306_hw_init();
-	#elif defined(SOFTWARE_PROTOCOL)
-		GPIO_InitTypeDef GPIO_InitStruct;
-	
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5|GPIO_PIN_3, GPIO_PIN_RESET);
-
-		/*Configure GPIO pins : PBPin PBPin PBPin */
-		GPIO_InitStruct.Pin 	= GPIO_PIN_5|GPIO_PIN_3;
-		GPIO_InitStruct.Mode 	= GPIO_MODE_OUTPUT_PP;
-		GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-		HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);	
-	#endif
-
-#elif defined(INTERFACE_3WIRE_SPI)	
-	
-	GPIO_InitTypeDef GPIO_InitStruct;
-	
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5|GPIO_PIN_3, GPIO_PIN_RESET);
-
-  /*Configure GPIO pins : PBPin PBPin PBPin */
-  GPIO_InitStruct.Pin 	= GPIO_PIN_5|GPIO_PIN_3;
-  GPIO_InitStruct.Mode 	= GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);	
-	
-	__SSD1306_CS_CLR();   //CS reset
-	__SSD1306_DC_CLR();   //D/C reset
-	__SSD1306_RES_SET();  //RES set
-	
-#elif defined(INTERFACE_IIC)	  
-	__SSD1306_CS_CLR();   //CS reset
-	__SSD1306_DC_CLR();   //D/C reset
-	__SSD1306_RES_SET();  //RES set
-
-#endif
-
 	ssd1306_write_byte(0xAE, SSD1306_CMD);//--turn off oled panel
 	ssd1306_write_byte(0x00, SSD1306_CMD);//---set low column address
 	ssd1306_write_byte(0x10, SSD1306_CMD);//---set high column address

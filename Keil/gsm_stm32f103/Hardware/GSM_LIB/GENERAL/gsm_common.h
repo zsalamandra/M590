@@ -1,7 +1,7 @@
 #ifndef GSM_VARS_H
 #define GSM_VARS_H
 
-#include "stm32f1xx_hal.h"
+#include "includes.h"
 
 
 extern char evnt_get_csq;

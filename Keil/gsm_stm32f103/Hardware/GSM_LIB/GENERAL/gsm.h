@@ -1,7 +1,7 @@
 #ifndef GSM_H
 #define GSM_H
 
-#include "stm32f1xx_hal.h"
+#include "includes.h"
 
 // BOOT Pin configuration
 #define PIN_GSM_ON_Pin GPIO_PIN_8

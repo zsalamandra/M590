@@ -1,7 +1,7 @@
 #ifndef GSM_USART_H
 #define GSM_USART_H
 
-#include "stm32f1xx_hal.h"
+#include "includes.h"
 
 #define txBufferLength									32
 #define rxBufferLength									128

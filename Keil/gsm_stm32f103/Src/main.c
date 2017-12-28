@@ -6,11 +6,10 @@
 #include "main.h"
 #include "includes.h"
 #include "delay.h"
-#include "tim.h"
 #include "SSD1306.h"
 #include "init_mc.h"
-#include "system.h"
-#include "gpio.h"
+
+#include "event_system.h"
 
 // gsm includes
 #include "gsm.h"
@@ -36,21 +35,10 @@ int main(void)
 {
     /* MCU Configuration----------------------------------------------------------*/
 
-    /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-    HAL_Init();
-	
-	SystemClock_Config();
-    
     init_mc();
 	
-	MX_GPIO_Init();
-
     delay_init();
 	delay_ms(10);
-
-
-	/* Initialize all configured peripherals */
-	MX_TIM2_Init();
 
 	ssd1306_init();
 	ssd1306_display_on();
@@ -111,14 +99,10 @@ int main(void)
   /* Infinite loop */
   while (1)
   {
-
 		pxEventFuncType pxEvent = ES_GetEvent();
 		if (pxEvent != NULL){
 			pxEvent();
 		}
-		
-		
-
   }
 
 }

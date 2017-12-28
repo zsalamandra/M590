@@ -12,8 +12,8 @@
   */
 	
 	
-#include "stm32f1xx_hal.h"
-#include "delay.h"	
+#include "delay.h"
+#include "includes.h"
 	
 	
 #define    DWT_CYCCNT    *(volatile unsigned long *)0xE0001004

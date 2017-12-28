@@ -1,7 +1,8 @@
 #ifndef INCLUDES_H
 #define INCLUDES_H
 
-#include "stm32f1xx_hal.h"
-#include "event_system.h"
+#include <stdint.h>
+#include "util.h"
+#include "stm32f103xb.h"
 
 #endif

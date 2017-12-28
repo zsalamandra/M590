@@ -1,11 +1,6 @@
 Dependencies for Project 'gsm_stm32f103', Target 'gsm_stm32f103': (DO NOT MODIFY !)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c)(0x596CD7B0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\stm32f1xx_hal_flash_ex.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\stm32f1xx_hal_flash_ex.crf --depend gsm_stm32f103\stm32f1xx_hal_flash_ex.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
+F (..\Src\system_stm32f1xx.c)(0x5A43BB21)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\system_stm32f1xx.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\system_stm32f1xx.crf --depend gsm_stm32f103\system_stm32f1xx.d)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A43BB9A)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
@@ -13,825 +8,193 @@ I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c)(0x596CD7B0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\stm32f1xx_hal_dma.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\stm32f1xx_hal_dma.crf --depend gsm_stm32f103\stm32f1xx_hal_dma.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c)(0x596CD7B0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\stm32f1xx_hal_tim_ex.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\stm32f1xx_hal_tim_ex.crf --depend gsm_stm32f103\stm32f1xx_hal_tim_ex.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c)(0x596CD7B0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\stm32f1xx_hal_gpio.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\stm32f1xx_hal_gpio.crf --depend gsm_stm32f103\stm32f1xx_hal_gpio.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c)(0x596CD7B0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\stm32f1xx_hal_cortex.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\stm32f1xx_hal_cortex.crf --depend gsm_stm32f103\stm32f1xx_hal_cortex.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c)(0x5A2D1454)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\stm32f1xx_hal.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\stm32f1xx_hal.crf --depend gsm_stm32f103\stm32f1xx_hal.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c)(0x596CD7B0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\stm32f1xx_hal_tim.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\stm32f1xx_hal_tim.crf --depend gsm_stm32f103\stm32f1xx_hal_tim.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c)(0x596CD7B0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\stm32f1xx_hal_gpio_ex.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\stm32f1xx_hal_gpio_ex.crf --depend gsm_stm32f103\stm32f1xx_hal_gpio_ex.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c)(0x596CD7B0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\stm32f1xx_hal_pwr.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\stm32f1xx_hal_pwr.crf --depend gsm_stm32f103\stm32f1xx_hal_pwr.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c)(0x596CD7B0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\stm32f1xx_hal_flash.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\stm32f1xx_hal_flash.crf --depend gsm_stm32f103\stm32f1xx_hal_flash.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c)(0x596CD7B0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\stm32f1xx_hal_rcc.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\stm32f1xx_hal_rcc.crf --depend gsm_stm32f103\stm32f1xx_hal_rcc.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c)(0x596CD7B0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\stm32f1xx_hal_rcc_ex.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\stm32f1xx_hal_rcc_ex.crf --depend gsm_stm32f103\stm32f1xx_hal_rcc_ex.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (..\Src\system_stm32f1xx.c)(0x596CD7AD)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\system_stm32f1xx.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\system_stm32f1xx.crf --depend gsm_stm32f103\system_stm32f1xx.d)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (startup_stm32f103xb.s)(0x5A34B944)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I..\Inc-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include--pd "__UVISION_VERSION SETA 517" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list ..\..\list\startup_stm32f103xb.lst --xref -o gsm_stm32f103\startup_stm32f103xb.o --depend gsm_stm32f103\startup_stm32f103xb.d)
-F (..\Hardware\delay\delay.c)(0x57F0F286)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\delay.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\delay.crf --depend gsm_stm32f103\delay.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
+F (startup_stm32f103xb.s)(0x5A34B944)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I..\Inc-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include--pd "__UVISION_VERSION SETA 517" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list ..\..\list\startup_stm32f103xb.lst --xref -o gsm_stm32f103\startup_stm32f103xb.o --depend gsm_stm32f103\startup_stm32f103xb.d)
+F (..\Hardware\delay\delay.c)(0x5A43B6EF)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\delay.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\delay.crf --depend gsm_stm32f103\delay.d)
 I (..\Hardware\delay\delay.h)(0x57F0F286)
-F (../Src/stm32f1xx_hal_msp.c)(0x5A34B93D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\stm32f1xx_hal_msp.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\stm32f1xx_hal_msp.crf --depend gsm_stm32f103\stm32f1xx_hal_msp.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
+I (../Inc/includes.h)(0x5A43B91E)
+I (../Inc/util.h)(0x5A44C47D)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (../Src/main.c)(0x5A3FC156)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\main.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\main.crf --depend gsm_stm32f103\main.d)
+F (../Src/main.c)(0x5A43B8A9)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\main.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\main.crf --depend gsm_stm32f103\main.d)
 I (../Inc/main.h)(0x5A34B93E)
-I (../Inc/includes.h)(0x5A3A6F1F)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
+I (../Inc/includes.h)(0x5A43B91E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
+I (../Inc/util.h)(0x5A44C47D)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-I (../Inc/event_system.h)(0x5A3A6F1F)
-I (../Inc/list_event.h)(0x5A3A444F)
 I (..\Hardware\delay\delay.h)(0x57F0F286)
-I (../Inc/tim.h)(0x5A34B93D)
-I (..\Hardware\SSD1306\SSD1306.h)(0x5A2D0BEE)
+I (..\Hardware\SSD1306\SSD1306.h)(0x5A44C832)
 I (../Inc/MacroAndConst.h)(0x549D2858)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB3986)
-I (..\Hardware\SSD1306\Fonts.h)(0x54BCBB42)
-I (../Inc/LIB_Config.h)(0x5A1A7912)
+I (..\Hardware\SSD1306\Fonts.h)(0x5A43B7A5)
+I (../Inc/gpio.h)(0x5A44C7D2)
 I (../Inc/init_mc.h)(0x5A3F2659)
-I (../Inc/system.h)(0x5A3901DA)
-I (../Inc/gpio.h)(0x5A34B93B)
-I (..\Hardware\GSM_LIB\GENERAL\gsm.h)(0x5A326E7C)
-I (..\Hardware\GSM_LIB\GENERAL\gsm_common.h)(0x5A38F25B)
-I (..\Hardware\GSM_LIB\USART\gsm_usart.h)(0x5A38F84D)
-F (../Src/tim.c)(0x5A39043C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\tim.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\tim.crf --depend gsm_stm32f103\tim.d)
-I (../Inc/tim.h)(0x5A34B93D)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (.\error.c)(0x5A37DD0F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\error.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\error.crf --depend gsm_stm32f103\error.d)
-I (../Inc/error.h)(0x5A38F8EF)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-I (..\Hardware\SSD1306\SSD1306.h)(0x5A2D0BEE)
-I (../Inc/MacroAndConst.h)(0x549D2858)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB3986)
-I (..\Hardware\SSD1306\Fonts.h)(0x54BCBB42)
-I (../Inc/LIB_Config.h)(0x5A1A7912)
-I (..\Hardware\delay\delay.h)(0x57F0F286)
-F (..\Src\event_system.c)(0x5A3A6F1F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\event_system.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\event_system.crf --depend gsm_stm32f103\event_system.d)
-I (../Inc/includes.h)(0x5A3A6F1F)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
 I (../Inc/event_system.h)(0x5A3A6F1F)
 I (../Inc/list_event.h)(0x5A3A444F)
-F (..\Src\event_functions.c)(0x5A3F17C3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\event_functions.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\event_functions.crf --depend gsm_stm32f103\event_functions.d)
+I (..\Hardware\GSM_LIB\GENERAL\gsm.h)(0x5A43B7C7)
+I (..\Hardware\GSM_LIB\GENERAL\gsm_common.h)(0x5A43B7E2)
+I (..\Hardware\GSM_LIB\USART\gsm_usart.h)(0x5A43B80C)
+F (..\Src\event_system.c)(0x5A3A6F1F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\event_system.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\event_system.crf --depend gsm_stm32f103\event_system.d)
+I (../Inc/includes.h)(0x5A43B91E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
+I (../Inc/util.h)(0x5A44C47D)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
+I (../Inc/event_system.h)(0x5A3A6F1F)
+I (../Inc/list_event.h)(0x5A3A444F)
+F (..\Src\event_functions.c)(0x5A3F17C3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\event_functions.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\event_functions.crf --depend gsm_stm32f103\event_functions.d)
 I (../Inc/event_functions.h)(0x5A3E24D8)
 I (../Inc/event_system.h)(0x5A3A6F1F)
-I (../Inc/includes.h)(0x5A3A6F1F)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
+I (../Inc/includes.h)(0x5A43B91E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
+I (../Inc/util.h)(0x5A44C47D)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
 I (../Inc/list_event.h)(0x5A3A444F)
-I (..\Hardware\GSM_LIB\GENERAL\gsm.h)(0x5A326E7C)
-I (..\Hardware\SSD1306\SSD1306.h)(0x5A2D0BEE)
+I (..\Hardware\GSM_LIB\GENERAL\gsm.h)(0x5A43B7C7)
+I (..\Hardware\SSD1306\SSD1306.h)(0x5A44C832)
 I (../Inc/MacroAndConst.h)(0x549D2858)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB3986)
-I (..\Hardware\SSD1306\Fonts.h)(0x54BCBB42)
-I (../Inc/LIB_Config.h)(0x5A1A7912)
+I (..\Hardware\SSD1306\Fonts.h)(0x5A43B7A5)
+I (../Inc/gpio.h)(0x5A44C7D2)
 I (..\Hardware\delay\delay.h)(0x57F0F286)
-F (..\Src\init_mc.c)(0x5A3FC156)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\init_mc.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\init_mc.crf --depend gsm_stm32f103\init_mc.d)
-I (../Inc/includes.h)(0x5A3A6F1F)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
+F (..\Src\init_mc.c)(0x5A44C451)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\init_mc.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\init_mc.crf --depend gsm_stm32f103\init_mc.d)
+I (../Inc/includes.h)(0x5A43B91E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
+I (../Inc/util.h)(0x5A44C47D)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
+I (../Inc/init_mc.h)(0x5A3F2659)
 I (../Inc/event_system.h)(0x5A3A6F1F)
 I (../Inc/list_event.h)(0x5A3A444F)
-I (../Inc/init_mc.h)(0x5A3F2659)
-I (../Inc/util.h)(0x5A3E23B6)
-F (..\Src\util.c)(0x5A3E21B3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\util.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\util.crf --depend gsm_stm32f103\util.d)
-I (../Inc/util.h)(0x5A3E23B6)
-F (..\Src\interrupt.c)(0x5A3F17C3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\interrupt.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\interrupt.crf --depend gsm_stm32f103\interrupt.d)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
+F (..\Src\util.c)(0x5A44C452)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\util.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\util.crf --depend gsm_stm32f103\util.d)
+I (../Inc/util.h)(0x5A44C47D)
+I (../Inc/includes.h)(0x5A43B91E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-I (../Inc/interrupt.h)(0x5A3E2441)
+F (..\Src\interrupt.c)(0x5A44C563)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\interrupt.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\interrupt.crf --depend gsm_stm32f103\interrupt.d)
+I (../Inc/includes.h)(0x5A43B91E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
+I (../Inc/util.h)(0x5A44C47D)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A43BB9A)
+I (../Inc/interrupt.h)(0x5A43B822)
+I (../Inc/main.h)(0x5A34B93E)
 I (../Inc/event_functions.h)(0x5A3E24D8)
 I (../Inc/event_system.h)(0x5A3A6F1F)
-I (../Inc/includes.h)(0x5A3A6F1F)
 I (../Inc/list_event.h)(0x5A3A444F)
-I (..\Hardware\GSM_LIB\GENERAL\gsm_common.h)(0x5A38F25B)
-I (../Inc/util.h)(0x5A3E23B6)
-F (..\Src\system.c)(0x5A3F17C3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\system.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\system.crf --depend gsm_stm32f103\system.d)
-I (../Inc/system.h)(0x5A3901DA)
-I (../Inc/includes.h)(0x5A3A6F1F)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
+I (..\Hardware\GSM_LIB\GENERAL\gsm_common.h)(0x5A43B7E2)
+F (..\Src\gpio.c)(0x5A44C832)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\gpio.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\gpio.crf --depend gsm_stm32f103\gpio.d)
+I (../Inc/gpio.h)(0x5A44C7D2)
+I (../Inc/includes.h)(0x5A43B91E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
+I (../Inc/util.h)(0x5A44C47D)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-I (../Inc/event_system.h)(0x5A3A6F1F)
-I (../Inc/list_event.h)(0x5A3A444F)
-F (..\Src\gpio.c)(0x5A37D093)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\gpio.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\gpio.crf --depend gsm_stm32f103\gpio.d)
-I (../Inc/gpio.h)(0x5A34B93B)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-F (..\Hardware\SSD1306\SSD1306.c)(0x5A3D189E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\ssd1306.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\ssd1306.crf --depend gsm_stm32f103\ssd1306.d)
-I (../Inc/LIB_Config.h)(0x5A1A7912)
+F (..\Hardware\SSD1306\SSD1306.c)(0x5A44C88D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\ssd1306.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\ssd1306.crf --depend gsm_stm32f103\ssd1306.d)
+I (..\Hardware\SSD1306\SSD1306.h)(0x5A44C832)
 I (../Inc/MacroAndConst.h)(0x549D2858)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
+I (..\Hardware\SSD1306\Fonts.h)(0x5A43B7A5)
+I (../Inc/includes.h)(0x5A43B91E)
+I (../Inc/util.h)(0x5A44C47D)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
+I (../Inc/gpio.h)(0x5A44C7D2)
 I (..\Hardware\delay\delay.h)(0x57F0F286)
-I (..\Hardware\SSD1306\SSD1306.h)(0x5A2D0BEE)
-I (..\Hardware\SSD1306\Fonts.h)(0x54BCBB42)
-F (..\Hardware\SSD1306\Fonts.c)(0x5A2CE280)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\fonts.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\fonts.crf --depend gsm_stm32f103\fonts.d)
-I (..\Hardware\SSD1306\Fonts.h)(0x54BCBB42)
-I (../Inc/LIB_Config.h)(0x5A1A7912)
-I (../Inc/MacroAndConst.h)(0x549D2858)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
+F (..\Hardware\SSD1306\Fonts.c)(0x5A2CE280)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\fonts.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\fonts.crf --depend gsm_stm32f103\fonts.d)
+I (..\Hardware\SSD1306\Fonts.h)(0x5A43B7A5)
+I (../Inc/includes.h)(0x5A43B91E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
+I (../Inc/util.h)(0x5A44C47D)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
+F (..\Hardware\GSM_LIB\GENERAL\gsm_common.c)(0x5A43B8BD)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\gsm_common.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\gsm_common.crf --depend gsm_stm32f103\gsm_common.d)
+I (..\Hardware\GSM_LIB\GENERAL\gsm_common.h)(0x5A43B7E2)
+I (../Inc/includes.h)(0x5A43B91E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
+I (../Inc/util.h)(0x5A44C47D)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
+F (..\Hardware\GSM_LIB\USART\gsm_usart.c)(0x5A392849)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\gsm_usart.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\gsm_usart.crf --depend gsm_stm32f103\gsm_usart.d)
+I (..\Hardware\GSM_LIB\USART\gsm_usart.h)(0x5A43B80C)
+I (../Inc/includes.h)(0x5A43B91E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
+I (../Inc/util.h)(0x5A44C47D)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
+I (..\Hardware\GSM_LIB\GENERAL\gsm_common.h)(0x5A43B7E2)
 I (..\Hardware\delay\delay.h)(0x57F0F286)
-I (..\Hardware\SSD1306\SSD1306.h)(0x5A2D0BEE)
-F (..\Hardware\GSM_LIB\GENERAL\gsm.c)(0x5A3D17ED)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\gsm.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\gsm.crf --depend gsm_stm32f103\gsm.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB3988)
+F (..\Hardware\GSM_LIB\GENERAL\gsm.c)(0x5A44C691)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\M590\Project\Keil\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\gsm.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\gsm.crf --depend gsm_stm32f103\gsm.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB3988)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB3988)
-I (..\Hardware\GSM_LIB\GENERAL\gsm.h)(0x5A326E7C)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
+I (..\Hardware\GSM_LIB\GENERAL\gsm.h)(0x5A43B7C7)
+I (../Inc/includes.h)(0x5A43B91E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
+I (../Inc/util.h)(0x5A44C47D)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
 I (..\Hardware\delay\delay.h)(0x57F0F286)
-I (..\Hardware\GSM_LIB\USART\gsm_usart.h)(0x5A38F84D)
-I (..\Hardware\GSM_LIB\GENERAL\gsm_common.h)(0x5A38F25B)
-F (..\Hardware\GSM_LIB\USART\gsm_usart.c)(0x5A392849)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\gsm_usart.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\gsm_usart.crf --depend gsm_stm32f103\gsm_usart.d)
-I (..\Hardware\GSM_LIB\USART\gsm_usart.h)(0x5A38F84D)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
-I (..\Hardware\GSM_LIB\GENERAL\gsm_common.h)(0x5A38F25B)
-I (..\Hardware\delay\delay.h)(0x57F0F286)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB3988)
-F (..\Hardware\GSM_LIB\GENERAL\gsm_common.c)(0x5A38F236)(-c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections --asm --interleave --asm_dir "..\\..\\list\\" -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I..\Hardware\SSD1306 -I..\Hardware\delay -I..\Hardware\GSM_LIB\GENERAL -I..\Hardware\GSM_LIB\USART -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS --C99-I E:\MC\2.STM32\STMProjects\GSM\GSM_M590\Project\gsm_stm32f103\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o gsm_stm32f103\gsm_common.o --list_dir "..\\..\\list\\" --list --omf_browse gsm_stm32f103\gsm_common.crf --depend gsm_stm32f103\gsm_common.d)
-I (..\Hardware\GSM_LIB\GENERAL\gsm_common.h)(0x5A38F25B)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x596CD7B0)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5A34B93E)
-I (../Inc/main.h)(0x5A34B93E)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x596CD7AD)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x596CD7B0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB3990)
-I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x596CD7B0)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x596CD7AD)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB3986)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x596CD7B0)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x596CD7B0)
+I (..\Hardware\GSM_LIB\USART\gsm_usart.h)(0x5A43B80C)
+I (..\Hardware\GSM_LIB\GENERAL\gsm_common.h)(0x5A43B7E2)
